@@ -1,0 +1,71 @@
+/*Bootstrap common css */
+h1,h2,h3,h4,h5,h6,
+small,span,
+ul,ol,
+p,*{
+margin:0;
+padding:0;
+}
+ul,ol{
+list-style-type:none;
+}
+a,a:hover{
+text-decoration:none;
+text-transform:none;
+}
+/*Bootstrap common css */
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: royalblue;
+}
+
+.main{
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 25px;
+}
+.song_pic{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+#song_thumb{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.animate{
+    animation: rounded  infinite linear;
+    animation-duration: 3s;
+}
+@keyframes rounded {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.durationProgress{
+    display: flex;
+    flex-direction: column;
+}
+.progressbar{
+    width: 70%;
+    height: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 27px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+#track{
+    height: 100%;
+    background: royalblue;
+    width: 0%;
+}

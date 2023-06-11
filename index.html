@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main card">
+        <div class="card-body">
+            <div class="header text-center p-3">
+                <h3 id="song_name" class="fw-medium">song name</h3>
+                <p id="artist" class="mt-1 fw-semibold">artist</p>
+            </div>
+            <div class="song_pic mx-auto">
+                <img id="song_thumb" src="https://image.winudf.com/v2/image1/bmV3LmZyZWUubXVzaWMubXAzLmRvd25sb2FkLmdhbWUuc3R1ZGlvX2ljb25fMTU2MzM1NDM5OF8wNzc/icon.png?w=&fakeurl=1" alt="">
+                <audio id="music" src="media/music/music1.mp3"></audio>
+            </div>
+            <div class="durationProgress">
+                <div class="FromTo d-flex justify-content-around ">
+                    <div id="mct" class="fs-sm fw-semibold">1:00</div>
+                    <div id="md" class="fs-sm fw-semibold">1:00</div>
+                </div>
+                <div class="progressbar">
+                    <div id="track"></div>
+                </div>
+            </div>
+            <div class="icon d-flex justify-content-evenly flex-wrap mt-3">
+                <button class="btn col-lg-2" ><i id="backward" class="fas fa-solid fa-backward"></i></button>
+                <button class="btn  col-lg-2" ><i id="play" class="fas fa-play"></i></button>
+                <button class="btn col-lg-2" ><i id="forward" class="fas fa-solid fa-forward"></i></button>
+                <div>
+                    <a id="download" href="media/music/music1.mp3" class="btn btn-danger d-block" download>Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
